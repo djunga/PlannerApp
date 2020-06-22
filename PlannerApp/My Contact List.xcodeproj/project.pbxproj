@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0CF1E515249FD67700ED3932 /* MyTaskListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1E513249FD67700ED3932 /* MyTaskListModel.xcdatamodeld */; };
 		1E31C16722F9CDBE0072F69E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C16622F9CDBE0072F69E /* Constants.swift */; };
-		1E31C18B22F9D0580072F69E /* MyContactListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C18922F9D0580072F69E /* MyContactListModel.xcdatamodeld */; };
 		1E31C18D22F9DC4C0072F69E /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C18C22F9DC4C0072F69E /* DateViewController.swift */; };
 		1E31C18F22F9E52B0072F69E /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C18E22F9E52B0072F69E /* TasksTableViewController.swift */; };
 		1E34AC7B22F4A36C00342F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34AC7A22F4A36C00342F01 /* AppDelegate.swift */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		0CF1E514249FD67700ED3932 /* MyTaskListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTaskListModel.xcdatamodel; sourceTree = "<group>"; };
 		1E31C16622F9CDBE0072F69E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1E31C18A22F9D0580072F69E /* MyContactListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyContactListModel.xcdatamodel; sourceTree = "<group>"; };
 		1E31C18C22F9DC4C0072F69E /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		1E31C18E22F9E52B0072F69E /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		1E34AC7722F4A36C00342F01 /* My Contact List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Contact List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +76,6 @@
 				1E34AC9222F8853600342F01 /* MapViewController.swift */,
 				1E31C16622F9CDBE0072F69E /* Constants.swift */,
 				0CF1E513249FD67700ED3932 /* MyTaskListModel.xcdatamodeld */,
-				1E31C18922F9D0580072F69E /* MyContactListModel.xcdatamodeld */,
 				1E31C18C22F9DC4C0072F69E /* DateViewController.swift */,
 				1E31C18E22F9E52B0072F69E /* TasksTableViewController.swift */,
 			);
@@ -159,7 +156,6 @@
 				1E31C16722F9CDBE0072F69E /* Constants.swift in Sources */,
 				1E34AC9322F8853600342F01 /* MapViewController.swift in Sources */,
 				1E31C18D22F9DC4C0072F69E /* DateViewController.swift in Sources */,
-				1E31C18B22F9D0580072F69E /* MyContactListModel.xcdatamodeld in Sources */,
 				0CF1E515249FD67700ED3932 /* MyTaskListModel.xcdatamodeld in Sources */,
 				1E34AC8F22F8851A00342F01 /* TasksViewController.swift in Sources */,
 				1E34AC7B22F4A36C00342F01 /* AppDelegate.swift in Sources */,
@@ -371,16 +367,6 @@
 			);
 			currentVersion = 0CF1E514249FD67700ED3932 /* MyTaskListModel.xcdatamodel */;
 			path = MyTaskListModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		1E31C18922F9D0580072F69E /* MyContactListModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1E31C18A22F9D0580072F69E /* MyContactListModel.xcdatamodel */,
-			);
-			currentVersion = 1E31C18A22F9D0580072F69E /* MyContactListModel.xcdatamodel */;
-			path = MyContactListModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

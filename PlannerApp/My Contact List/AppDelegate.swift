@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  My Contact List
+//  My Task List
 //
 //  Created by Michael Eierman on 8/2/19.
 //  Copyright © 2019 Learning Mobile Apps. All rights reserved.
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settings = UserDefaults.standard
         
         if settings.string(forKey: Constants.kSortField) == nil {
-            settings.set("city", forKey: Constants.kSortField)
+            settings.set("course", forKey: Constants.kSortField)
         }
         if settings.string(forKey: Constants.kSortDirectionAscending) == nil {
             settings.set(true, forKey: Constants.kSortDirectionAscending)
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
-        let container = NSPersistentContainer(name: "MyContactListModel")
+        let container = NSPersistentContainer(name: "MyTaskListModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

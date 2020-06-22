@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  My Contact List
+//  My Task List
 //
 //  Created by Michael Eierman on 8/5/19.
 //  Copyright © 2019 Learning Mobile Apps. All rights reserved.
@@ -14,7 +14,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var swAscending: UISwitch!
     @IBOutlet weak var pckSortField: UIPickerView!
     
-    let sortOrderItems: Array<String> = ["contactName", "city", "birthday"]
+    let sortOrderItems: Array<String> = ["taskDescription", "course"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

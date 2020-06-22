@@ -1,6 +1,6 @@
 //
 //  DateViewController.swift
-//  My Contact List
+//  My Task List
 //
 //  Created by Michael Eierman on 8/6/19.
 //  Copyright © 2019 Learning Mobile Apps. All rights reserved.
@@ -26,7 +26,7 @@ class DateViewController: UIViewController {
                             target: self,
                             action: #selector(saveDate))
         self.navigationItem.rightBarButtonItem = saveButton
-        self.title = "Pick Birthdate"
+        self.title = "Pick Due Date"
     }
     
     @objc func saveDate(){

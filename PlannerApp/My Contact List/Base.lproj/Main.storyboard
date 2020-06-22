@@ -83,7 +83,7 @@
                                                         <rect key="frame" x="290.66666666666669" y="0.0" width="103.33333333333331" height="30"/>
                                                         <state key="normal" title="Change"/>
                                                         <connections>
-                                                            <segue destination="NLE-Es-IMx" kind="show" identifier="segueContactDate" id="hsH-o9-lEA"/>
+                                                            <segue destination="NLE-Es-IMx" kind="show" identifier="seguetaskDate" id="hsH-o9-lEA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="194" y="-440"/>
         </scene>
-        <!--Birthdate-->
+        <!--Duedate-->
         <scene sceneID="QJo-Qr-m1k">
             <objects>
-                <viewController title="Birthdate" id="NLE-Es-IMx" customClass="DateViewController" customModule="My_Contact_List" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Duedate" id="NLE-Es-IMx" customClass="DateViewController" customModule="My_Contact_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BnQ-4P-G7v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +200,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="sample-834-bolt" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Courses" image="teacher" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="pckSortField" destination="MvI-ht-Gd9" id="jkP-yC-iW6"/>
                         <outlet property="swAscending" destination="3jM-bV-dVf" id="HYO-0c-zBo"/>
@@ -210,16 +210,16 @@
             </objects>
             <point key="canvasLocation" x="-1312" y="329"/>
         </scene>
-        <!--Contacts-->
+        <!--Tasks-->
         <scene sceneID="T8m-ux-7Qf">
             <objects>
-                <tableViewController title="Contacts" id="VsN-oU-oU9" customClass="ContactsTableViewController" customModule="My_Contact_List" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Tasks" id="VsN-oU-oU9" customClass="TasksTableViewController" customModule="My_Contact_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2BC-Do-Oxx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" textLabel="rEB-iO-k4M" detailTextLabel="HGm-es-Epj" style="IBUITableViewCellStyleSubtitle" id="8Ze-0G-jCQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TasksCell" textLabel="rEB-iO-k4M" detailTextLabel="HGm-es-Epj" style="IBUITableViewCellStyleSubtitle" id="8Ze-0G-jCQ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Ze-0G-jCQ" id="qyu-Id-1I4">
@@ -243,7 +243,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="9pv-A4-QxB" kind="show" identifier="EditContact" trigger="accessoryAction" id="hoG-Eb-Zwa"/>
+                                    <segue destination="9pv-A4-QxB" kind="show" identifier="Edittask" trigger="accessoryAction" id="hoG-Eb-Zwa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -252,10 +252,10 @@
                             <outlet property="delegate" destination="VsN-oU-oU9" id="ggj-ze-COp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contacts" id="Tst-vi-HLF">
+                    <navigationItem key="navigationItem" title="Tasks" id="Tst-vi-HLF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zPE-Hm-ppj">
                             <connections>
-                                <segue destination="9pv-A4-QxB" kind="show" identifier="AddContact" id="sK2-il-JgG"/>
+                                <segue destination="9pv-A4-QxB" kind="show" identifier="Addtask" id="sK2-il-JgG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -287,7 +287,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DBm-1U-22s"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="sample-881-globe" id="TPM-HP-OKN"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="cal" id="TPM-HP-OKN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ut-vJ-lbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,11 +312,11 @@
             </objects>
             <point key="canvasLocation" x="-2119" y="-440"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--TaskNav-->
         <scene sceneID="qrD-Am-h3O">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VyE-yn-PBp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="acW-dT-cKf"/>
+                <navigationController title="TaskNav" automaticallyAdjustsScrollViewInsets="NO" id="VyE-yn-PBp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tasks" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oDc-g8-9d3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -336,7 +336,8 @@
         <segue reference="hoG-Eb-Zwa"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="sample-834-bolt" width="26" height="28"/>
-        <image name="sample-881-globe" width="28" height="28"/>
+        <image name="cal" width="26" height="26"/>
+        <image name="home" width="26" height="26"/>
+        <image name="teacher" width="26" height="26"/>
     </resources>
 </document>

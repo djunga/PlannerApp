@@ -1,6 +1,6 @@
 //
-//  ContactsTableViewController.swift
-//  My Contact List
+//  TasksTableViewController.swift
+//  My Task List
 //
 //  Created by Michael Eierman on 8/6/19.
 //  Copyright © 2019 Learning Mobile Apps. All rights reserved.
@@ -10,9 +10,7 @@ import UIKit
 import CoreData
 
 class TasksTableViewController: UITableViewController {
-
- //  let contacts = ["Jim", "John", "Dana", "Rosie", "Justin", "Jeremy", "Sarah", "Matt", "Joe", "Donald", "Jeff"]
-    
+  
     var tasks:[NSManagedObject] = []
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
