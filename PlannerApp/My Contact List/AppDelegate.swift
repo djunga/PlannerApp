@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  My Task List
 //
-//  Created by Michael Eierman on 8/2/19.
-//  Copyright © 2019 Learning Mobile Apps. All rights reserved.
+//  Created by Tora Mullings on 8/2/19.
+//  Copyright © 2020 Learning Mobile Apps. All rights reserved.
 //
 
 import UIKit

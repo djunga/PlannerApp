@@ -1,5 +1,5 @@
 //
-//  TasksTableViewController.swift
+//  CoursesTableViewController.swift
 //  My Task List
 //
 //  Created by Tora Mullings on 6/22/20.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TasksTableViewController: UITableViewController {
+class CoursesTableViewController: UITableViewController {
   
     var tasks:[NSManagedObject] = []
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -57,12 +57,12 @@ class TasksTableViewController: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TasksCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoursesCell", for: indexPath)
         
         // Configure the cell...
         let task = tasks[indexPath.row] as? Task
-        cell.textLabel?.text = task?.taskDescription
-        cell.detailTextLabel?.text = task?.course
+        cell.textLabel?.text = task?.course
+        cell.detailTextLabel?.text = "5"
         cell.accessoryType = .detailDisclosureButton
         return cell
     }

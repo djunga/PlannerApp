@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7F87F924A1656200DD0F2D /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F87F824A1656200DD0F2D /* CoursesTableViewController.swift */; };
+		0C7F87FB24A16A4800DD0F2D /* CourseTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F87FA24A16A4800DD0F2D /* CourseTasksTableViewController.swift */; };
 		0CF1E515249FD67700ED3932 /* MyTaskListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1E513249FD67700ED3932 /* MyTaskListModel.xcdatamodeld */; };
 		1E31C16722F9CDBE0072F69E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C16622F9CDBE0072F69E /* Constants.swift */; };
 		1E31C18D22F9DC4C0072F69E /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E31C18C22F9DC4C0072F69E /* DateViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7F87F824A1656200DD0F2D /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		0C7F87FA24A16A4800DD0F2D /* CourseTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTasksTableViewController.swift; sourceTree = "<group>"; };
 		0CF1E514249FD67700ED3932 /* MyTaskListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTaskListModel.xcdatamodel; sourceTree = "<group>"; };
 		1E31C16622F9CDBE0072F69E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1E31C18C22F9DC4C0072F69E /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				0CF1E513249FD67700ED3932 /* MyTaskListModel.xcdatamodeld */,
 				1E31C18C22F9DC4C0072F69E /* DateViewController.swift */,
 				1E31C18E22F9E52B0072F69E /* TasksTableViewController.swift */,
+				0C7F87F824A1656200DD0F2D /* CoursesTableViewController.swift */,
+				0C7F87FA24A16A4800DD0F2D /* CourseTasksTableViewController.swift */,
 			);
 			path = "My Contact List";
 			sourceTree = "<group>";
@@ -154,9 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E31C16722F9CDBE0072F69E /* Constants.swift in Sources */,
+				0C7F87F924A1656200DD0F2D /* CoursesTableViewController.swift in Sources */,
 				1E34AC9322F8853600342F01 /* MapViewController.swift in Sources */,
 				1E31C18D22F9DC4C0072F69E /* DateViewController.swift in Sources */,
 				0CF1E515249FD67700ED3932 /* MyTaskListModel.xcdatamodeld in Sources */,
+				0C7F87FB24A16A4800DD0F2D /* CourseTasksTableViewController.swift in Sources */,
 				1E34AC8F22F8851A00342F01 /* TasksViewController.swift in Sources */,
 				1E34AC7B22F4A36C00342F01 /* AppDelegate.swift in Sources */,
 				1E31C18F22F9E52B0072F69E /* TasksTableViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  TasksTableViewController.swift
+//  CourseTasksTableViewController.swift
 //  My Task List
 //
 //  Created by Tora Mullings on 6/22/20.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TasksTableViewController: UITableViewController {
+class CourseTasksTableViewController: UITableViewController {
   
     var tasks:[NSManagedObject] = []
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -57,12 +57,12 @@ class TasksTableViewController: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TasksCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CourseTasksCell", for: indexPath)
         
         // Configure the cell...
         let task = tasks[indexPath.row] as? Task
-        cell.textLabel?.text = task?.taskDescription
-        cell.detailTextLabel?.text = task?.course
+        cell.textLabel?.text = "Hi"//task?.course
+        cell.detailTextLabel?.text = "I'm paul"
         cell.accessoryType = .detailDisclosureButton
         return cell
     }
@@ -124,7 +124,7 @@ class TasksTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "EditTask" {
+        if segue.identifier == "CourseTasks" {
             let taskController = segue.destination as? TasksViewController
             let selectedRow = self.tableView.indexPath(for: sender as! UITableViewCell)?.row
             let selectedTask = tasks[selectedRow!] as? Task
