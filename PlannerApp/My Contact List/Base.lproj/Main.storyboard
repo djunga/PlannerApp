@@ -83,7 +83,7 @@
                                                         <rect key="frame" x="290.66666666666669" y="0.0" width="103.33333333333331" height="30"/>
                                                         <state key="normal" title="Change"/>
                                                         <connections>
-                                                            <segue destination="NLE-Es-IMx" kind="show" identifier="seguetaskDate" id="hsH-o9-lEA"/>
+                                                            <segue destination="NLE-Es-IMx" kind="show" identifier="segueTaskDate" id="hsH-o9-lEA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
