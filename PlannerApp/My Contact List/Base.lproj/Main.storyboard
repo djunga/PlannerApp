@@ -200,7 +200,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Courses" image="teacher" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="sample-834-bolt" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="pckSortField" destination="MvI-ht-Gd9" id="jkP-yC-iW6"/>
                         <outlet property="swAscending" destination="3jM-bV-dVf" id="HYO-0c-zBo"/>
@@ -209,6 +209,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1312" y="329"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="HbM-g2-JO3">
+            <objects>
+                <viewController id="Ras-AB-qcs" customClass="TasksTableViewController" customModule="My_Contact_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="86e-p0-NcL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TasksCell" textLabel="M7K-2S-mwk" detailTextLabel="KJf-zr-jKO" style="IBUITableViewCellStyleSubtitle" id="pkL-Mm-Q7Y">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pkL-Mm-Q7Y" id="YKm-wt-Vfv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M7K-2S-mwk">
+                                            <rect key="frame" x="20.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KJf-zr-jKO">
+                                            <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ras-AB-qcs" id="AtA-r1-ArB"/>
+                            <outlet property="delegate" destination="Ras-AB-qcs" id="aa6-1R-4li"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Courses" image="teacher" id="Atf-SF-yMm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pL2-Hb-qOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="317.93478260869568"/>
         </scene>
         <!--Tasks-->
         <scene sceneID="T8m-ux-7Qf">
@@ -306,6 +351,7 @@
                         <segue destination="VyE-yn-PBp" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="zKT-3b-Yei" kind="relationship" relationship="viewControllers" id="gBr-eS-MWS"/>
+                        <segue destination="Ras-AB-qcs" kind="relationship" relationship="viewControllers" id="CE5-4v-x9S"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -338,6 +384,7 @@
     <resources>
         <image name="cal" width="26" height="26"/>
         <image name="home" width="26" height="26"/>
+        <image name="sample-834-bolt" width="26" height="28"/>
         <image name="teacher" width="26" height="26"/>
     </resources>
 </document>
