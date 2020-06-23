@@ -64,21 +64,30 @@ class TasksTableViewController: UITableViewController {
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let todayDate:String = formatter.string(from: Date())
         let myString = formatter.string(from: (task?.dueDate)!)
+        let now = Calendar.current.dateComponents(in: .current, from: Date())
+        let tomorrow = DateComponents(year: now.year, month: now.month, day: now.day! + 1)
+        let tomorrowDate:String = formatter.string(from: Calendar.current.date(from: tomorrow)!)
+
         
         let inputtedDate = formatter.date(from: myString)
         let todayDateStr = formatter.date(from: todayDate)
+        let tomorrowDateStr = formatter.date(from: tomorrowDate)
         
         formatter.dateFormat = "dd-MMM-yyyy"
         // again convert your date to string
         let myStringafd = formatter.string(from: inputtedDate!)
         let todayDatefd = formatter.string(from: todayDateStr!)
+        let tomorrowDatefd = formatter.string(from: tomorrowDateStr!)
         
         cell.textLabel?.text = (task?.taskDescription)!
         cell.detailTextLabel?.text = (task?.course)! + "                         \(myStringafd)"
         cell.accessoryType = .none
         //let todayDate:String = formatter
         if(todayDatefd == myStringafd) {
-            cell.backgroundColor = UIColor(red:0.7, green:0.0, blue:0.0, alpha: 0.7)//(red: 0xFF1100, alpha: 0.2)//
+            cell.backgroundColor = UIColor(red:0.7, green:0.0, blue:0.0, alpha: 0.7)
+        }
+        if(tomorrowDatefd == myStringafd) {
+            cell.backgroundColor = UIColor(red:0.0, green:0.0, blue:0.7, alpha: 0.3)
         }
         
         return cell
