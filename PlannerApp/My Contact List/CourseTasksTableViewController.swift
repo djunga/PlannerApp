@@ -1,9 +1,10 @@
-//
-//  CourseTasksTableViewController.swift
-//  My Task List
-//
-//  Created by Tora Mullings on 6/22/20.
-//  Copyright © 2020 Learning Mobile Apps. All rights reserved.
+/*
+NAME: Tora Mullings
+SB ID: 111407756
+
+Some of this code was taken from the textbook.
+*/
+
 //
 
 import UIKit

@@ -1,10 +1,10 @@
-//
-//  CoursesTableViewController.swift
-//  My Task List
-//
-//  Created by Tora Mullings on 6/22/20.
-//  Copyright © 2020 Learning Mobile Apps. All rights reserved.
-//
+/*
+NAME: Tora Mullings
+SB ID: 111407756
+
+Some of this code was taken from the textbook.
+*/
+
 
 import UIKit
 import CoreData
@@ -13,6 +13,9 @@ class CoursesTableViewController: UITableViewController {
   
     var tasks:[NSManagedObject] = []
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //////////////////
+    var coursesDict: [String: Int] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +60,23 @@ class CoursesTableViewController: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CoursesCell", for: indexPath)
+        let task = tasks[indexPath.row] as? Task
+        var cell:UITableViewCell
+        if coursesDict.index(forKey: (task?.course)!) != nil {
+            let count:Int = (coursesDict[(task?.course)!])! + 1
+            coursesDict[(task?.course)!] = count
+            cell = (tableView.dequeueReusableCell(withIdentifier: "CoursesCell"))!
+        }
+        else {
+            coursesDict[(task?.course)!] = 1
+            cell = tableView.dequeueReusableCell(withIdentifier: "CoursesCell", for: indexPath)
+        }
         
         // Configure the cell...
-        let task = tasks[indexPath.row] as? Task
         cell.textLabel?.text = task?.course
-        cell.detailTextLabel?.text = "5"
-        cell.accessoryType = .detailDisclosureButton
+        cell.detailTextLabel?.text = String((coursesDict[(task?.course)!])!)
+        cell.accessoryType = .none//.detailDisclosureButton
+        NSLog("Item: \((task?.course)!) , \((coursesDict[(task?.course)!])!)")
         return cell
     }
   

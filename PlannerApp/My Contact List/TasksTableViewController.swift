@@ -1,10 +1,9 @@
-//
-//  TasksTableViewController.swift
-//  My Task List
-//
-//  Created by Tora Mullings on 6/22/20.
-//  Copyright © 2020 Learning Mobile Apps. All rights reserved.
-//
+/*
+ NAME: Tora Mullings
+ SB ID: 111407756
+ 
+ Some of this code was taken from the textbook.
+ */
 
 import UIKit
 import CoreData
@@ -61,9 +60,27 @@ class TasksTableViewController: UITableViewController {
         
         // Configure the cell...
         let task = tasks[indexPath.row] as? Task
-        cell.textLabel?.text = task?.taskDescription
-        cell.detailTextLabel?.text = task?.course
-        cell.accessoryType = .detailDisclosureButton
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let todayDate:String = formatter.string(from: Date())
+        let myString = formatter.string(from: (task?.dueDate)!)
+        
+        let inputtedDate = formatter.date(from: myString)
+        let todayDateStr = formatter.date(from: todayDate)
+        
+        formatter.dateFormat = "dd-MMM-yyyy"
+        // again convert your date to string
+        let myStringafd = formatter.string(from: inputtedDate!)
+        let todayDatefd = formatter.string(from: todayDateStr!)
+        
+        cell.textLabel?.text = (task?.taskDescription)!
+        cell.detailTextLabel?.text = (task?.course)! + "                         \(myStringafd)"
+        cell.accessoryType = .none
+        //let todayDate:String = formatter
+        if(todayDatefd == myStringafd) {
+            cell.backgroundColor = UIColor(red:0.7, green:0.0, blue:0.0, alpha: 0.7)//(red: 0xFF1100, alpha: 0.2)//
+        }
+        
         return cell
     }
   
